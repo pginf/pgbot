@@ -1,7 +1,11 @@
 from pgbot import PGBot
 from pgbot import guild_ids
 
+
 import discord
+from discord.ext import commands
+from discord_slash import cog_ext, SlashCommandOptionType, SlashContext
+from discord_slash.utils import manage_commands
 
 
 class Info(commands.Cog):

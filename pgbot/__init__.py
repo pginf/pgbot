@@ -23,7 +23,7 @@ class PGBot(commands.Bot):
         try:
             self.loop.run_until_complete(self.bot_start())
         except KeyboardInterrupt:
-            self.loop.run_until_complete(self.bot_close())
+            self.loop.run_until_complete(self.bot_stop())
 
     def load_extensions(self, path: Path):
         if not path.is_dir() and not path.exists():
@@ -45,7 +45,8 @@ class PGBot(commands.Bot):
         self.load_extensions(self.MAIN_PATH.joinpath("tasks"))
         self.load_extensions(self.MAIN_PATH.joinpath("events"))
 
-        await self.start(self.token)
+        await self.login(self.token)
+        await self.connect()
 
     async def bot_stop(self):
         await super().close()
