@@ -7,6 +7,8 @@ name = "pypi"
 "discord.py" = "*"
 discord-py-slash-command = "*"
 python-dotenv = "*"
+requests = "*"
+requests-futures = "*"
 
 [dev-packages]
 autopep8 = "*"
