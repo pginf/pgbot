@@ -38,7 +38,7 @@ class Info(commands.Cog):
             msg += f"{key} : {str(value)}\n"
 
         em = discord.Embed(
-            title=f"Informacje o {info['Nick']}", description=msg, colour=discord.Colour.green())
+            title=f"Informacje o {info['Nick']}", description=msg, colour=discord.Colour.blue())
         await ctx.send(embed=em)
 
 
