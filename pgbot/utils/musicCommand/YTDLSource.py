@@ -54,7 +54,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         self.stream_url = data.get('url')
 
     def __str__(self):
-        return '**{0.title}** by **{0.uploader}**'.format(self)
+        return '**{0.title}** przez **{0.uploader}**'.format(self)
 
     @classmethod
     async def create_source(cls, ctx: SlashContext, search: str, *, loop: asyncio.BaseEventLoop = None):
@@ -105,12 +105,12 @@ class YTDLSource(discord.PCMVolumeTransformer):
 
         duration = []
         if days > 0:
-            duration.append(f'{days} days')
+            duration.append(f'{days} dni')
         if hours > 0:
-            duration.append(f'{hours} days')
+            duration.append(f'{hours} godzin')
         if minutes > 0:
-            duration.append(f'{minutes} days')
+            duration.append(f'{minutes} minut')
         if seconds > 0:
-            duration.append(f'{seconds} days')
+            duration.append(f'{seconds} sekundgit')
 
         return ', '.join(duration)
