@@ -8,6 +8,7 @@ from discord_slash.utils.manage_components import create_actionrow, create_butto
 from discord_slash.model import ButtonStyle
 
 from pgbot import PGBot, guild_ids
+import pgbot.utils.colors as colors
 from typing import List
 
 
@@ -32,7 +33,7 @@ class Teams(commands.Cog):
         em = discord.Embed(
             title="Losowanie Drużyn",
             description="ABY **DOŁĄCZYĆ** :white_check_mark:\n**KONIEC** CZEKANIA :x:",
-            colour=discord.Colour.blue()
+            colour=colors.main
         )
         join_button = create_button(
             style=ButtonStyle.green, label="Dołącz", emoji="\u2705")
@@ -62,7 +63,7 @@ class Teams(commands.Cog):
             em = discord.Embed(
                 title="Losowanie drużyn",
                 description=f"Gracze: {', '.join((user.mention for user in users))}",
-                colour=discord.Colour.blue()
+                colour=colors.main
             )
 
             await button_ctx.edit_origin(embed=em)
@@ -84,7 +85,7 @@ class Teams(commands.Cog):
             full_desc += "\n"
 
         em = discord.Embed(
-            title="Teams", description=full_desc, color=discord.Color.blue())
+            title="Teams", description=full_desc, color=colors.main)
         await ctx.channel.send(embed=em)
 
 
