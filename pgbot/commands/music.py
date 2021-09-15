@@ -94,13 +94,13 @@ class Music(commands.Cog):
     @cog_ext.cog_slash(name='pause', description='Pauzuje odtwarzacz', guild_ids=guild_ids, options=[])
     async def _pause(self, ctx: SlashContext):
         ctx.voice_state = self.get_voice_state(ctx)
-        if not ctx.voice_state.is_playing and ctx.voice_state.voice.is_playing():
+        if ctx.voice_state.is_playing and ctx.voice_state.voice.is_playing():
             ctx.voice_state.voice.pause()
 
     @cog_ext.cog_slash(name='resume', description='Ponawiam odtwarzacz', guild_ids=guild_ids, options=[])
     async def _resume(self, ctx: SlashContext):
         ctx.voice_state = self.get_voice_state(ctx)
-        if not ctx.voice_state.is_playing and ctx.voice_state.voice.is_paused():
+        if ctx.voice_state.is_playing and ctx.voice_state.voice.is_paused():
             ctx.voice_state.voice.resume()
 
     @cog_ext.cog_slash(name='stop', description='Zatrzymuje odtwarzacz i czyści kolejkę', guild_ids=guild_ids, options=[])
@@ -109,7 +109,7 @@ class Music(commands.Cog):
 
         ctx.voice_state.songs.clear()
 
-        if not ctx.voice_state.is_playing:
+        if ctx.voice_state.is_playing:
             ctx.voice_state.voice.stop()
 
     @cog_ext.cog_slash(name='skip', description='Pomija aktualnie graną muzykę', guild_ids=guild_ids, options=[])
@@ -133,7 +133,7 @@ class Music(commands.Cog):
         ctx.voice_state = self.get_voice_state(ctx)
 
         if len(ctx.voice_state.songs) == 0:
-            await ctx.send('Kolejka jest pusta')
+            return await ctx.send('Kolejka jest pusta')
 
         items_per_page = 10
         pages = math.ceil(len(ctx.voice_state.songs) / items_per_page)

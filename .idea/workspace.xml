@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61d2b9e-67ac-425e-9d90-79fb051e9bf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgbot/commands/Music.py" beforeDir="false" afterPath="$PROJECT_DIR$/pgbot/commands/music.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgbot/utils/musicCommand/Song.py" beforeDir="false" afterPath="$PROJECT_DIR$/pgbot/utils/musicCommand/song.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgbot/utils/musicCommand/SongQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/pgbot/utils/musicCommand/song_queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgbot/utils/musicCommand/VoiceState.py" beforeDir="false" afterPath="$PROJECT_DIR$/pgbot/utils/musicCommand/voice_state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pgbot/utils/musicCommand/YTDLSource.py" beforeDir="false" afterPath="$PROJECT_DIR$/pgbot/utils/musicCommand/YTDLSource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pgbot/commands/music.py" beforeDir="false" afterPath="$PROJECT_DIR$/pgbot/commands/music.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,21 +136,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631728996775" />
-    <state width="1899" height="316" key="GridCell.Tab.0.bottom" timestamp="1631731979835">
+    <state width="1899" height="316" key="GridCell.Tab.0.bottom" timestamp="1631733067378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1631731979835" />
-    <state width="1899" height="316" key="GridCell.Tab.0.center" timestamp="1631731979835">
+    <state width="1899" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1631733067378" />
+    <state width="1899" height="316" key="GridCell.Tab.0.center" timestamp="1631733067377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="316" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1631731979835" />
-    <state width="1899" height="316" key="GridCell.Tab.0.left" timestamp="1631731979834">
+    <state width="1899" height="316" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1631733067377" />
+    <state width="1899" height="316" key="GridCell.Tab.0.left" timestamp="1631733067377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="316" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1631731979834" />
-    <state width="1899" height="316" key="GridCell.Tab.0.right" timestamp="1631731979835">
+    <state width="1899" height="316" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1631733067377" />
+    <state width="1899" height="316" key="GridCell.Tab.0.right" timestamp="1631733067378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="316" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1631731979835" />
+    <state width="1899" height="316" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1631733067378" />
   </component>
 </project>
