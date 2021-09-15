@@ -9,6 +9,8 @@ discord-py-slash-command = "*"
 python-dotenv = "*"
 requests = "*"
 requests-futures = "*"
+beautifulsoup4 = "*"
+aiohttp = "*"
 
 [dev-packages]
 autopep8 = "*"

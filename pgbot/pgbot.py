@@ -33,8 +33,8 @@ class PGBot(commands.Bot):
             try:
                 self.load_extension(extension_path)
                 print(f"LOADED {extension_path}")
-            except:
-                print(f"FAILED {extension_path}")
+            except Exception as e:
+                print(f"FAILED {extension_path}\n{e}\n")
 
     async def bot_start(self):
         slash = SlashCommand(self, override_type=True, sync_commands=True)
