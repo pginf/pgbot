@@ -1,6 +1,6 @@
 import discord
 
-from pgbot.utils.musicCommand import YTDLSource
+from pgbot.utils.music import YTDLSource
 
 
 class Song:

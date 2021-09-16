@@ -4,7 +4,7 @@ from async_timeout import timeout
 from discord_slash import SlashContext
 
 from pgbot import PGBot
-from pgbot.utils.musicCommand.song_queue import SongQueue
+from pgbot.utils.music.song_queue import SongQueue
 
 
 class VoiceState:

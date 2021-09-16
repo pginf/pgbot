@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a2bd02a6c157b090118b1a15befa1bb2884eb3c1f48c00a8253653273691a82e"
+            "sha256": "7ecade7ff138039569300de29a419e3560eabeb6daf4abb891fcc84fe013f3f1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -166,13 +166,6 @@
             ],
             "index": "pypi",
             "version": "==1.7.3"
-        },
-        "ffmpeg": {
-            "hashes": [
-                "sha256:6931692c890ff21d39938433c2189747815dca0c60ddc7f9bb97f199dba0b5b9"
-            ],
-            "index": "pypi",
-            "version": "==1.4"
         },
         "idna": {
             "hashes": [

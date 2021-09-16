@@ -6,6 +6,8 @@ import discord
 import youtube_dl
 from discord_slash import SlashContext
 
+from pgbot.utils.time_parser import TimeParser
+
 
 class YTDLSource(discord.PCMVolumeTransformer):
     YTDLOptions = {
@@ -45,7 +47,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         self.title = data.get('title')
         self.thumbnail = data.get('thumbnail')
         self.description = data.get('description')
-        self.duration = self.parse_duration(int(data.get('duration')))
+        self.duration = TimeParser(int(data.get('duration'))).full_form
         self.tags = data.get('tags')
         self.url = data.get('webpage_url')
         self.views = data.get('view_count')
@@ -96,21 +98,3 @@ class YTDLSource(discord.PCMVolumeTransformer):
                     raise Exception(f'Couldnt retrive any matches for {webpage_url}')
 
         return cls(ctx, discord.FFmpegPCMAudio(info['url'], **cls.FFMPEG_OPTIONS), data=info)
-
-    @staticmethod
-    def parse_duration(duration: int):
-        minutes, seconds = divmod(duration, 60)
-        hours, minutes = divmod(minutes, 60)
-        days, hours = divmod(hours, 24)
-
-        duration = []
-        if days > 0:
-            duration.append(f'{days} dni')
-        if hours > 0:
-            duration.append(f'{hours} godzin')
-        if minutes > 0:
-            duration.append(f'{minutes} minut')
-        if seconds > 0:
-            duration.append(f'{seconds} sekundgit')
-
-        return ', '.join(duration)

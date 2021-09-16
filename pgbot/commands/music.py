@@ -6,9 +6,9 @@ from discord_slash import SlashContext, cog_ext, SlashCommandOptionType
 from discord_slash.utils import manage_commands
 
 from pgbot import PGBot, guild_ids
-from pgbot.utils.musicCommand.YTDLSource import YTDLSource
-from pgbot.utils.musicCommand.song import Song
-from pgbot.utils.musicCommand.voice_state import VoiceState
+from pgbot.utils.music.YTDLSource import YTDLSource
+from pgbot.utils.music.song import Song
+from pgbot.utils.music.voice_state import VoiceState
 
 
 class Music(commands.Cog):
