@@ -4,11 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"discord.py" = "*"
+"discord.py" = {extras = ["voice"], version = "*"}
 discord-py-slash-command = "*"
 python-dotenv = "*"
 requests = "*"
 requests-futures = "*"
+pynacl = "*"
+youtube_dl = "*"
 
 [dev-packages]
 autopep8 = "*"
