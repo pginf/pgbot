@@ -34,12 +34,14 @@ class PGBot(commands.Bot):
                 self.load_extension(extension_path)
                 print(f"LOADED {extension_path}")
             except Exception as e:
-                print(f"FAILED {extension_path}\n{e}\n")
+                print(f"FAILED {extension_path}")
+                print(e)
 
     async def bot_start(self):
         slash = SlashCommand(self, override_type=True, sync_commands=True)
 
         self.load_extensions(self.MAIN_PATH.joinpath("commands"))
+        #self.load_extensions(self.MAIN_PATH.joinpath("lib/musicCommand"))
         self.load_extensions(self.MAIN_PATH.joinpath("tasks"))
         self.load_extensions(self.MAIN_PATH.joinpath("events"))
 
