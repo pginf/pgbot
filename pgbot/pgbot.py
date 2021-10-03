@@ -41,7 +41,6 @@ class PGBot(commands.Bot):
         slash = SlashCommand(self, override_type=True, sync_commands=True)
 
         self.load_extensions(self.MAIN_PATH.joinpath("commands"))
-        #self.load_extensions(self.MAIN_PATH.joinpath("lib/musicCommand"))
         self.load_extensions(self.MAIN_PATH.joinpath("tasks"))
         self.load_extensions(self.MAIN_PATH.joinpath("events"))
 
