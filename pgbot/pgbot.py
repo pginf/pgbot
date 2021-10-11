@@ -3,10 +3,11 @@ import discord
 from discord.ext import commands
 from discord_slash import SlashCommand
 from pathlib import Path
+from pgbot.db.session import session
 
 
 class PGBot(commands.Bot):
-    def __init__(self, token: str, debug: bool = True):
+    def __init__(self, token: str):
         super().__init__(
             command_prefix=".",
             intents=discord.Intents.all(),
@@ -14,7 +15,6 @@ class PGBot(commands.Bot):
         )
 
         self.token = token
-        self.debug = debug
         self.MAIN_PATH: Path = Path("pgbot")
 
     def run(self):
@@ -49,6 +49,7 @@ class PGBot(commands.Bot):
 
     async def bot_stop(self):
         await super().close()
+        session.close()
 
     async def on_ready(self):
         print(

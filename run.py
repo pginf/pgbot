@@ -1,13 +1,6 @@
-import os
-import dotenv
 from pgbot import PGBot
+from pgbot.env import TOKEN
 
 if __name__ == "__main__":
-    dotenv.load_dotenv()
-
-    TOKEN = os.environ.get("TOKEN")
-    if not TOKEN:
-        raise Exception("Could not load token from env")
-
     pgbot = PGBot(TOKEN)
     pgbot.run()

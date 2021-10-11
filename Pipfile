@@ -13,6 +13,8 @@ beautifulsoup4 = "*"
 aiohttp = "*"
 pynacl = "*"
 youtube_dl = "*"
+sqlalchemy = "*"
+mysqlclient = "*"
 
 [dev-packages]
 autopep8 = "*"
