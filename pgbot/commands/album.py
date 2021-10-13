@@ -26,7 +26,7 @@ class Album(commands.Cog):
     ])
     async def __album(self, ctx: SlashContext, nr_albumu: int):
         student: PGStudent = session.query(PGStudent).filter_by(nr_albumu=nr_albumu).first()
-        await ctx.send(f"{student.nr_albumu}: {student.imie} {student.nazwisko}")
+        await ctx.send(f"{student.nr_albumu}: {student.imie} {student.nazwisko} {student.discord_id}")
 
 
 def setup(bot: PGBot):

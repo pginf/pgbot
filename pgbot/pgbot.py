@@ -48,8 +48,8 @@ class PGBot(commands.Bot):
         await self.connect()
 
     async def bot_stop(self):
-        await super().close()
         session.close()
+        await super().close()
 
     async def on_ready(self):
         print(
