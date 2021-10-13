@@ -14,13 +14,13 @@ class PGStudent(Base):
     nr_albumu = Column(Integer, primary_key=True)
     imie = Column(String(30), nullable=False)
     nazwisko = Column(String(30), nullable=False)
-    discordId = Column(BigInteger, nullable=True)
+    discord_id = Column(BigInteger, nullable=True)
 
-    def __init__(self, nr_albumu: int, imie: str, nazwisko: str, discordId: int = None):
+    def __init__(self, nr_albumu: int, imie: str, nazwisko: str, discord_id: int = None):
         self.nr_albumu = nr_albumu
         self.imie = imie
         self.nazwisko = nazwisko
-        self.discordId = discordId
+        self.discord_id = discord_id
 
 
 Base.metadata.create_all(engine)
